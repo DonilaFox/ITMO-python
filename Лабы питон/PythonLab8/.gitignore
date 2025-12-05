@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.db
+*.sqlite
+
+# Local configuration (e.g. sensitive data, local overrides)
+config.local.py
+.env
+
+# History / cache files (if you store currency history in files during dev)
+*.json
+!sample_data.json  # <- если вы добавляете пример данных — раскомментируйте и укажите имя
+
+# Coverage reports (if you use testing tools like pytest-cov)
+.htmlcov/
+.coverage
+coverage.xml
