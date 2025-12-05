@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ app_name }}</title>
+</head>
+<body>
+    <h1>{{ app_name }}</h1>
+    <p>Автор: {{ author_name }}</p>
+    <p>Группа: {{ group }}</p>
+    <nav>
+        <a href="/">Главная</a> |
+        <a href="/author">Об авторе</a> |
+        <a href="/users">Пользователи</a> |
+        <a href="/currencies">Курсы валют</a>
+    </nav>
+    <h2>Актуальные валюты</h2>
+    <table border="1">
+        <tr><th>Код</th><th>Название</th><th>Курс</th><th>Номинал</th></tr>
+        {% for c in currencies %}
+        <tr>
+            <td>{{ c.char_code }}</td>
+            <td>{{ c.name }}</td>
+            <td>{{ "%.4f"|format(c.value) }}</td>
+            <td>{{ c.nominal }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
