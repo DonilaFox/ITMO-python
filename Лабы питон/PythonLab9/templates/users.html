@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Пользователи</title></head>
+<body>
+  <h1>Список пользователей</h1>
+  <ul>
+  {% for user in users %}
+    <li><a href="/user?id={{ user.id }}">{{ user.name }}</a></li>
+  {% endfor %}
+  </ul>
+  <a href="/">← Назад</a>
+</body>
+</html>

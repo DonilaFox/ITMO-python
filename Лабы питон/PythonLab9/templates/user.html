@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Пользователь: {{ user.name }}</title></head>
+<body>
+  <h1>Пользователь: {{ user.name }}</h1>
+  <h2>Подписки на валюты:</h2>
+  {% if currencies %}
+    <ul>
+    {% for c in currencies %}
+      <li>{{ c.char_code }} ({{ c.name }}): {{ c.value }} за {{ c.nominal }}</li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>Нет подписок или курсов недоступно.</p>
+  {% endif %}
+  <a href="/users">← Назад к списку</a>
+</body>
+</html>
