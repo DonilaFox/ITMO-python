@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+.env
+.venv
+env/
+venv.bak/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# Myapp-specific
+# (если вы добавите файлы конфигурации или данные в будущем)
+config.ini
+secrets.py
+.env
+
+# Jupyter / IPython
+.ipynb_checkpoints/
